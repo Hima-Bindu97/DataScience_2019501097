@@ -1,7 +1,7 @@
 %% Machine Learning Online Class - Exercise 1: Linear Regression
 
 %  Instructions
-%  -----------
+%  ------------
 %
 %  This file contains code that helps you get started on the
 %  linear exercise. You will need to complete the following functions
@@ -45,7 +45,9 @@ m = length(y); % number of training examples
 % Plot Data
 % Note: You have to complete the code in plotData.m
 plotData(X, y);
-
+plot(X, y, 'rx', 'MarkerSize', 10);
+ylabel('Profit in $10,000s');
+xlabel('Population of City in 10,000s');
 fprintf('Program paused. Press enter to continue.\n');
 pause;
 

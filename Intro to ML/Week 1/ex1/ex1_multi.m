@@ -104,7 +104,7 @@ fprintf('\n');
 % ====================== YOUR CODE HERE ======================
 % Recall that the first column of X is all-ones. Thus, it does
 % not need to be normalized.
-price = 100; % You should change this
+price = 0; % You should change this
 
 
 % ============================================================
@@ -130,7 +130,7 @@ fprintf('Solving with normal equations...\n');
 %
 
 %% Load Data
-data = load('ex1data2.txt');
+data = csvread('ex1data2.txt');
 X = data(:, 1:2);
 y = data(:, 3);
 m = length(y);
@@ -156,3 +156,4 @@ price = 0; % You should change this
 
 fprintf(['Predicted price of a 1650 sq-ft, 3 br house ' ...
          '(using normal equations):\n $%f\n'], price);
+
